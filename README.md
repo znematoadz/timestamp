@@ -7,6 +7,6 @@
 
 ### Example
 
-[https://useful-punishment.glitch.me/api/timestamp/2019-12-25]
+https://useful-punishment.glitch.me/api/timestamp/2019-12-25
 
-[https://useful-punishment.glitch.me/api/timestamp/1577232000000]
+https://useful-punishment.glitch.me/api/timestamp/1577232000000
