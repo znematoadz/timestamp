@@ -6,7 +6,7 @@ let app = express();
 
 app.use(cors());
 
-app.use("/public", express.static(__dirname + "/public"));
+app.use("/public", express.static(process.cwd() + "/public"));
 
 app.get("/", (req, res) => res.sendFile(process.cwd() + "/views/index.html"));
 
