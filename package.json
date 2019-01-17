@@ -5,9 +5,7 @@
   "main": "server.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -27,7 +25,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
