@@ -1,0 +1,63 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="public/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <h1>TimeStamp API</h1>
+    <main>
+      <section class="list">
+        <ul>
+          <li>
+            API endpoint: GET
+            https://useful-punishment.glitch.me/api/timestamp/:date_string?
+          </li>
+          <li>
+            If :data_string? is valid the api returns JSON with both UNIX and
+            UTC date forms.
+          </li>
+          <li>
+            If :data_string? is empty the api returns current date and time
+            (GMT)
+          </li>
+          <li>
+            If :data_string? is invalid the api returns {error: "Invalid Date"}
+          </li>
+        </ul>
+      </section>
+      <br />
+      <section>
+        <h3>Examples</h3>
+
+        <a
+          href="https://useful-punishment.glitch.me/api/timestamp/2019-12-25"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://useful-punishment.glitch.me/api/timestamp/2019-12-25</a
+        >
+        <br />
+        <a
+          href="https://useful-punishment.glitch.me/api/timestamp/1577232000000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://useful-punishment.glitch.me/api/timestamp/1577232000000</a
+        >
+      </section>
+    </main>
+  </body>
+</html>

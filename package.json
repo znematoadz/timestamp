@@ -1,5 +1,5 @@
 {
-  "name": "timestamp",
+  "name": "timestamp-api-gj",
   "version": "1.0.0",
   "description": "api timestamp  microservice ",
   "main": "server.js",
@@ -25,10 +25,10 @@
   },
   "homepage": "https://znematoadz.github.io/timestamp",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
+
