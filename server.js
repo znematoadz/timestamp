@@ -1,15 +1,16 @@
 let express = require("express");
-let bodyParser = require("body-parser");
+
 let cors = require("cors");
 
 let app = express();
 
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => res.sendFile(__dirname + "/dist/index.html"));
+app.use("/public", express.static(__dirname + "/public"));
 
-app.get("/api/:date_string?", (req, res, next) => {
+app.get("/", (req, res) => res.sendFile(process.cwd() + "/views/index.html"));
+
+app.get("/api/timestamp/:date_string?", (req, res, next) => {
   let date;
   if (req.params.date_string !== undefined) {
     let unix = parseInt(req.params.date_string * 1);
