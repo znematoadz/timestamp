@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Timestamp API</title>
+  </head>
+  <body>
+    <h1>TimeStamp API</h1>
+    <main>
+      <section class="list">
+        <ul>
+          <li>
+            API endpoint: GET
+            https://znematoadz.github.io/timestamp/api/:date_string?
+          </li>
+          <li>
+            If :data_string? is valid the api returns JSON with both UNIX and
+            UTC date forms.
+          </li>
+          <li>
+            If :data_string? is empty the api returns current date and time
+            (GMT)
+          </li>
+          <li>
+            If :data_string? is invalid the api returns {error: "Invalid Date"}
+          </li>
+        </ul>
+      </section>
+      <br />
+      <section>
+        <h3>Examples</h3>
+
+        <a
+          href="http://znematoadz.github.io/timestamp/api/2019-12-25"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://znematoadz.github.io/timestamp/api/2019-12-25</a
+        >
+        <br />
+        <a
+          href="https://znematoadz.github.io/timestamp/api/1577232000000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://znematoadz.github.io/timestamp/api/1577232000000</a
+        >
+      </section>
+    </main>
+  </body>
+</html>
